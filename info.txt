@@ -1,0 +1,21 @@
+
+Markdown lenguaje de marcado
+
+1 Componentes: son funciones
+
+ function componentes(){}
+
+ const componente = () => {}
+
+ class componentes {}
+
+2 Los componentes van siempre en mayuscula
+
+3 Los compon siempre tienen retorno
+
+const Componente = () => {
+    return "retorno"
+}
+
+
+Cada componente es un bloque importante para la pagina, como un header

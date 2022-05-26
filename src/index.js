@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from "./App"
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+//tener la variable react en scope
+import React from "react" //sentencia vieja que ya cambió
+//"react": cuando no especifico la ruta de la carpeta con ./ , por defecto busca algun paquete instalado en la carpeta node modules
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//tener la variable reactDOM en scope para renderizar:
+//import ReactDOM from "react-dom" forma vieja
+import ReactDOM from "react-dom/client"  //forma nueva
+
+//la librearia "react" nos permite escribir codigo, "reactDOM" es la libreria que nos permite ver ese codigo en un DOM o "react-native" para ver en un dispositivo mobil
+
+
+import "./style.scss"
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+
+//tener la viariable App(la variable que contiene aplicacion entera) en scope
+// const App = () => {
+//     return "Hola mundo"
+// }
+
+//hacer render de la App en el DOM
+//ReactDOM.render(<App/>, document.getElementById("root"))  forma vieja
+root.render(<App/>)
